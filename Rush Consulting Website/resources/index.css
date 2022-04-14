@@ -1,0 +1,273 @@
+html {
+font-family: 'Inter', sans-serif;
+font-family: 'Medula One';
+font-family: 'PT Sans', sans-serif;
+font-size: 16px;
+}
+/* Universal Styles */
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-weight: bold;
+  }
+  
+  .media-container {
+    overflow: hidden;
+  }
+  
+  .media-container img,
+  .media-container video {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Universal Component - Flex Content Container */
+  
+  .flex-content {
+    display: flex;
+    padding: 0 1.5rem;
+  }
+  
+  .flex-content .main-content {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0;
+    border-right: 1px solid rgb(245, 245, 245);
+  }
+  
+  .flex-content .supporting-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+  }
+  
+  /* Universal Component - Content Image Box */
+  
+  .content-image-box {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 1px solid rgb(245, 245, 245);
+  }
+  
+  .content-image-box:first-child {
+    padding-top: 0;
+  }
+  
+  .content-image-box:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .content-image-box .media-container {
+    width: 35%;
+  }
+  
+  .content-image-box .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 0.75rem 0 1rem;
+  }
+  
+  .content-image-box h4 {
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .content-image-box p {
+    padding-bottom: .5rem;
+  }
+  
+  .content-image-box .mobile {
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 895px) {
+    .content-image-box .desktop {
+      display: none;
+    }
+  
+    .content-image-box .mobile {
+      display: block;
+    }
+  
+    .content-image-box {
+      padding-left: 0;
+      border-bottom: none;
+    }
+  
+    .content-image-box .media-container {
+      width: 100%;
+    }
+  }
+  
+  /* Header */
+  
+  header {
+    padding: 1rem 1.5rem;
+  }
+  
+  header .desktop {
+    background-color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 8rem;
+    margin: .5rem 1rem;
+  }
+  
+  header li {
+    display: inline;
+    padding: 1rem 1rem 0 2rem;
+    font-family: 'Medula One';
+    font-size: 1.6rem;
+    color: #00c2cb;
+    text-decoration: none;
+  }
+  
+  header li:last-child {
+    padding-right: 1rem;
+  }
+  
+  header .mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .logo {
+      justify-content: center;
+    }
+  
+    .logo span {
+      display: none;
+    }
+  
+    nav {
+      display: none;
+    }
+  }
+  
+  /* Banner */
+  
+  #banner {
+    background-color: #2f748e;
+  }
+  
+  #banner .main-content {
+    border-right: none;
+    text-align: center;
+}
+  
+  #banner .supporting-content {
+    justify-content: center;
+  }
+  
+  #banner h3 {
+    width: auto;
+    padding-top: 8rem;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: left;
+    color: #414043;
+  }
+
+  #banner button {
+      background-color: #2f748e;
+      font-size: 1.65rem;
+      font-weight: 600;
+      border: 2px solid black;
+      color: #414043;
+      height: 3rem;
+      float: left;  
+      margin-top: 2.5rem;
+}
+
+/* Success */
+
+.success {
+    width: 100%;
+}
+
+#success h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Medula One';
+    color: #2f748e;
+}
+
+.success img {
+    height: auto;
+}
+
+  @media only screen and (max-width: 770px) {
+    #banner {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+  /* Footer */
+  
+  footer {
+    display: inline;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: .75rem;
+    color: rgb(112, 112, 112);
+  }
+  
+  footer .copyright {
+    flex-grow: 1;
+    text-align: center;
+}
+  
+  footer a {
+    margin-right: .75rem;
+  }
+  
+  footer a:last-child {
+    margin-right: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    footer a {
+      display: none;
+    }
+}
