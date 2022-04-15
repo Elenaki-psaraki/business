@@ -134,14 +134,17 @@ font-size: 16px;
     width: 8rem;
     margin: .5rem 1rem;
   }
+
+  header a {
+    color: #00c2cb;
+    text-decoration: none;
+  }
   
   header li {
     display: inline;
     padding: 1rem 1rem 0 2rem;
     font-family: 'Medula One';
     font-size: 1.6rem;
-    color: #00c2cb;
-    text-decoration: none;
   }
     
   header .mobile {
