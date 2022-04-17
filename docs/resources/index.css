@@ -24,6 +24,7 @@ font-size: 16px;
   .media-container img,
   .media-container video {
     display: block;
+    height: 100%;
     width: 100%;
   }
   
@@ -35,7 +36,7 @@ font-size: 16px;
   }
   
   .flex-content .main-content {
-    width: 60%;
+    width: 40%;
     padding: 2rem 1.5rem 2rem 0;
     border-right: 1px solid rgb(245, 245, 245);
   }
@@ -47,65 +48,13 @@ font-size: 16px;
     padding: 2rem 0;
   }
   
-  /* Universal Component - Content Image Box */
-  
-  .content-image-box {
-    display: flex;
-    padding: 1rem 0 1rem 1rem;
-    border-bottom: 1px solid rgb(245, 245, 245);
-  }
-  
-  .content-image-box:first-child {
-    padding-top: 0;
-  }
-  
-  .content-image-box:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  
-  .content-image-box .media-container {
-    width: 35%;
-  }
-  
-  .content-image-box .text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 65%;
-    padding: 0 0.75rem 0 1rem;
-  }
-  
-  .content-image-box h4 {
-    padding-bottom: .5rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .content-image-box p {
-    padding-bottom: .5rem;
-  }
-  
-  .content-image-box .mobile {
-    display: none;
-  }
-  
-  
-  @media only screen and (max-width: 895px) {
+    @media only screen and (max-width: 895px) {
     .content-image-box .desktop {
       display: none;
     }
   
-    .content-image-box .mobile {
-      display: block;
-    }
   
-    .content-image-box {
-      padding-left: 0;
-      border-bottom: none;
-    }
-  
-    .content-image-box .media-container {
+    .media-container {
       width: 100%;
     }
   }
@@ -162,19 +111,21 @@ font-size: 16px;
     }
   
     header .mobile ul {
+      background-color: black;
+      color: #00c2cb;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      height: 5rem;
+      justify-content:flex-end;
+      align-items: left;
     }
-  
-    .logo {
-      justify-content: center;
+
+    header .mobile img {
+      display: flex;
+      height: 2.8rem;
+      margin: 0;
+      float: left;
     }
-  
-    .logo span {
-      display: none;
-    }
-  
+ 
     nav {
       display: none;
     }
@@ -193,13 +144,13 @@ font-size: 16px;
     text-align: center;
 }
   
-  #banner .supporting-content {
-    justify-content: center;
+  #banner img {
+    vertical-align: middle;
   }
   
   #banner h3 {
     width: auto;
-    padding-top: 8rem;
+    padding-top: 3.5rem;
     font-size: 4rem;
     font-weight: 400;
     text-align: left;
@@ -212,7 +163,7 @@ font-size: 16px;
       font-weight: 600;
       border: 2px solid black;
       color: #414043;
-      height: 3rem;
+      height: auto;
       float: left;  
       margin-top: 2.5rem;
       justify-content: center;
@@ -251,6 +202,7 @@ font-size: 16px;
     padding: 1rem 1.5rem;
     font-size: .75rem;
     color: rgb(112, 112, 112);
+
   }
   
   footer .copyright {
