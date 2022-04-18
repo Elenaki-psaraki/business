@@ -6,16 +6,25 @@ html {
     }
     /* Universal Styles */
       
-           
+      h2 {
+        padding-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      
+      h3 {
+        font-weight: bold;
+      }
+      
       .media-container {
         overflow: hidden;
-        background-color: antiquewhite;
       }
       
       .media-container img,
       .media-container video {
         display: block;
-        height: 50%;
+        height: 100%;
         width: 100%;
       }
       
@@ -23,10 +32,23 @@ html {
       
       .flex-content {
         display: flex;
-        padding: 10rem 1.5rem;
-        align-items: center;
+        padding: 0 1.5rem;
+        text-align: center;
       }
-          
+      
+      .flex-content .main-content {
+        width: 40%;
+        padding: 2rem 1.5rem 2rem 0;
+        border-right: 1px solid rgb(245, 245, 245);
+      }
+      
+      .flex-content .supporting-content {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 2rem 0;
+      }
+      
         @media only screen and (max-width: 895px) {
         .content-image-box .desktop {
           display: none;
@@ -112,13 +134,53 @@ html {
     }
   }
       
-      /* Articles */
+      /* Contact */
+      
+      #whatwedo {
+        display: flex;
+        background-color: #8ad7bb;
+        width: 100%;
+      }    
 
-      h1 {
+      #whatwedo h1 {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        width: 100%;
         font-family: 'Medula One';
-        font-size: 3em;
+        color: #2f748e;
+        font-size: 8rem;
+        align-content: center;
       }
-    
+
+      #whatwedo2 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #8ad7bb;
+        height: auto;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+      }  
+
+      .box {
+        background-color: white;
+        height: 29rem;
+        border: 5px solid #2f748e;
+        border-radius: 15%;
+        font-family: 'Inter';
+        margin-bottom: 20%;
+
+      }
+
+      .box h2 {
+        font-weight: 800;
+        font-size: 2rem;
+      }
+
+      .box li {
+        text-align: left;
+      }
        
       @media only screen and (max-width: 770px) {
         #contact {
@@ -155,4 +217,4 @@ html {
         footer a {
           display: none;
         }
-    }
+      }
