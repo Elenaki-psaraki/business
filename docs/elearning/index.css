@@ -1,0 +1,221 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Medula One';
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    }
+    /* Universal Styles */
+      
+      h2 {
+        padding-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      
+      h3 {
+        font-weight: bold;
+      }
+      
+      .media-container {
+        overflow: hidden;
+      }
+      
+      .media-container img,
+      .media-container video {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      
+      /* Universal Component - Flex Content Container */
+      
+      .flex-content {
+        display: flex;
+        padding: 0 1.5rem;
+        text-align: center;
+      }
+      
+      .flex-content .main-content {
+        width: 40%;
+        padding: 2rem 1.5rem 2rem 0;
+        border-right: 1px solid rgb(245, 245, 245);
+      }
+      
+      .flex-content .supporting-content {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 2rem 0;
+      }
+      
+        @media only screen and (max-width: 895px) {
+        .content-image-box .desktop {
+          display: none;
+        }
+      
+      
+        .media-container {
+          width: 100%;
+          display: none;
+        }
+      }
+      
+      /* Header */
+  
+  header {
+    width: 100%;
+    padding: 0.01rem 0.01rem 0 0;
+  }
+  
+  header .desktop {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 8rem;
+    margin: .5rem 1rem;
+  }
+
+  header a {
+    color: #00c2cb;
+    text-decoration: none;
+  }
+  
+  header li {
+    display: inline;
+    padding: 1rem 1rem 0 2rem;
+    font-family: 'Medula One';
+    font-size: 1.6rem;
+  }
+    
+  header .mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .mobile ul {
+      background-color: black;
+      color: #00c2cb;
+      display: flex;
+      height: 5rem;
+      justify-content:flex-end;
+      align-items: left;
+    }
+
+    header .mobile img {
+      display: flex;
+      height: 2.8rem;
+      margin: 0;
+      float: left;
+    }
+ 
+    nav {
+      display: none;
+    }
+  }
+      
+      /* Contact */
+      
+      #whatwedo {
+        display: flex;
+        background-color: #8ad7bb;
+        width: 100%;
+      }    
+
+      #whatwedo h1 {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        width: 100%;
+        font-family: 'Medula One';
+        color: #2f748e;
+        font-size: 8rem;
+        align-content: center;
+      }
+
+      #whatwedo2 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #8ad7bb;
+        height: auto;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+      }  
+
+      .box {
+        background-color: white;
+        height: 19rem;
+        border: 5px solid #2f748e;
+        border-radius: 15%;
+        font-family: 'Inter';
+        margin-bottom: 20%;
+
+      }
+
+      .box h2 {
+        font-weight: 800;
+        color: #2f748e;
+        font-size: 2rem;
+      }
+
+      .box li {
+        text-align: left;
+      }
+       
+      @media only screen and (max-width: 770px) {
+        #contact {
+          flex-direction: column;
+          padding: 0;
+        }
+      }
+      /* Footer */
+      
+      footer {
+        display: flex;
+        text-align: center;
+        padding: 1rem 1.5rem;
+        font-size: .75rem;
+        color: rgb(112, 112, 112);
+        align-items: flex-start;
+        border-top: 1px solid #414043;
+      }
+      
+      footer .copyright {
+        flex-grow: 1;
+        text-align: center;
+    }
+      
+      footer a {
+        margin-right: .75rem;
+      }
+      
+      footer a:last-child {
+        margin-right: 0;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        footer a {
+          display: none;
+        }
+      }
