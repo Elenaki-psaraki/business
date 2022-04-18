@@ -165,6 +165,13 @@ font-size: 16px;
       justify-content: center;
     }
 
+
+    
+  button a {
+    color: #414043;
+    text-decoration: none;
+  }
+
 /* Success */
 
 .success {
