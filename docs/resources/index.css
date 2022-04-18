@@ -11,12 +11,7 @@ font-size: 16px;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
-  }
-  
-  h3 {
-    font-weight: bold;
-  }
-  
+  } 
   .media-container {
     overflow: hidden;
   }
@@ -62,11 +57,12 @@ font-size: 16px;
   /* Header */
   
   header {
-    padding: 1rem 1.5rem;
+    width: 100%;
+    padding: 0.01rem 0.01rem 0 0;
   }
   
   header .desktop {
-    width: 98%;
+    width: 100%;
     position: fixed;
     background-color: black;
     display: flex;
@@ -193,12 +189,34 @@ font-size: 16px;
       flex-direction: column;
       padding: 0;
     }
+  }
+  /* Who we are */
+
+  #who-we-are {
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    }
+
+
+  #who-we-are h1 {
+    font-family: 'Medula One';
+    font-size: 10rem;
+    color: #2f748e;
+  }
+
+  #who-we-are p {
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1.65em;
+  }
+
     
-  /* Footer */
+   /* Footer */
   
   footer {
-    display: inline;
-    text-align: center;
+    display: flex;
+    text-align: right;
     padding: 1rem 1.5rem;
     font-size: .75rem;
     color: rgb(112, 112, 112);
