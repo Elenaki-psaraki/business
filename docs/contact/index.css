@@ -139,7 +139,6 @@ html {
         background-image: url(../resources/images/background-contact.png);
         background-repeat: no-repeat;
         background-position-x: right;
-        background-image;
         margin-top: 8rem;
         background-color: #e8dbb4;
         height: 100vh;
@@ -187,7 +186,7 @@ html {
         font-size: .75rem;
         color: rgb(112, 112, 112);
         align-items: flex-start;
-    
+        border-top: 1px solid #414043;
       }
       
       footer .copyright {
