@@ -136,13 +136,13 @@ html {
       
       /* Contact */
       
-      #whatwedo {
+      #courses {
         display: flex;
         background-color: #8ad7bb;
         width: 100%;
       }    
 
-      #whatwedo h1 {
+      #courses h1 {
         padding-top: 10%;
         padding-bottom: 5%;
         width: 100%;
@@ -152,11 +152,10 @@ html {
         align-content: center;
       }
 
-      #whatwedo2 {
+      #courses {
         display: flex;
         flex-wrap: wrap;
         background-color: #8ad7bb;
-        height: auto;
         width: 100%;
         align-items: flex-start;
         flex-direction: row;
@@ -168,6 +167,7 @@ html {
         height: 19rem;
         border: 5px solid #2f748e;
         border-radius: 15%;
+        height: auto;
         font-family: 'Inter';
         margin-bottom: 20%;
 
