@@ -154,6 +154,7 @@ html {
 
       #courses {
         display: flex;
+        flex: 1;
         flex-wrap: wrap;
         background-color: #8ad7bb;
         width: 100%;
