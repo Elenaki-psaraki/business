@@ -26,19 +26,7 @@ html {
         padding: 10rem 1.5rem;
         align-items: center;
       }
-          
-        @media only screen and (max-width: 895px) {
-        .content-image-box .desktop {
-          display: none;
-        }
-      
-      
-        .media-container {
-          width: 100%;
-          display: none;
-        }
-      }
-      
+                
       /* Header */
   
   header {
