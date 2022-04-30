@@ -10,21 +10,21 @@ html {
       .media-container {
         overflow: hidden;
         background-color: antiquewhite;
+        align-items: center;
       }
       
       .media-container img,
       .media-container video {
         display: block;
         height: 50%;
-        width: 100%;
       }
       
       /* Universal Component - Flex Content Container */
       
       .flex-content {
-        display: flex;
         padding: 10rem 1.5rem;
         align-items: center;
+        border: 3px solid #414043;
       }
                 
       /* Header */
@@ -106,11 +106,19 @@ html {
         font-family: 'Medula One';
         font-size: 3em;
       }
+
+      .article {
+        width: 100%;
+      }
+
+      .image1 {
+        width: 50px;
+      }
     
        
       @media only screen and (max-width: 770px) {
-        #contact {
-          flex-direction: column;
+        #articles {
+          flex-direction: row;
           padding: 0;
         }
       }
