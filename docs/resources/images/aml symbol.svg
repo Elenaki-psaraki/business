@@ -1,7 +1,0 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Anti-money laundering icon</title>
-<desc>A shield with a checkmark, representing compliance and protection</desc>
-<path d="M100 20 L165 45 L165 95 C165 140 137 172 100 185 C63 172 35 140 35 95 L35 45 Z" fill="#2563eb"/>
-<path d="M100 32 L153 53 L153 95 C153 133 129 160 100 172 C71 160 47 133 47 95 L47 53 Z" fill="#ffffff"/>
-<path d="M78 100 L94 116 L124 82" fill="none" stroke="#2563eb" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
