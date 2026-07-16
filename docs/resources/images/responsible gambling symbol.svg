@@ -1,0 +1,9 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Responsible gambling icon</title>
+<desc>A protective hand cradling a heart, representing player care and protection</desc>
+<circle cx="100" cy="100" r="80" fill="#0d9488"/>
+<circle cx="100" cy="100" r="68" fill="#ffffff"/>
+<path d="M100 88 C93 76 74 78 74 96 C74 112 100 130 100 130 C100 130 126 112 126 96 C126 78 107 76 100 88 Z" fill="#0d9488"/>
+<path d="M55 118 C55 106 63 100 72 100 L92 100 C98 100 103 104 103 109 C103 114 98 118 92 118 L80 118" fill="none" stroke="#0d9488" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M145 118 C145 106 137 100 128 100 L108 100" fill="none" stroke="#0d9488" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
